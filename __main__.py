@@ -4,13 +4,14 @@ from src.website import Website
 from src.scrapers.hipertextualscraper import HipertextualScraper
 from src.scrapers.unoceroscraper import UnoCeroScraper
 from src.scrapers.slashdotscraper import  SlashDotScraper
+from src.scrapers.acmcommunicationscraper import  ACMCommunicationScraper
 
 import sys
 
 websites = [ Website("Hipertextual", "http://hipertextual.com/software", HipertextualScraper())
            , Website("Slashdot", "http://software.slashdot.org", SlashDotScraper())
            , Website("UnoCero", "https://www.unocero.com/", UnoCeroScraper())
-           , Website("ACM Communication", "http://cacm.acm.org/news", HipertextualScraper())
+           , Website("ACM Communication", "http://cacm.acm.org/news", ACMCommunicationScraper())
            ]
 
 def print_websites(websites):
