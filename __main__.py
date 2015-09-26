@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#! ./bin/python3
 
 from src.website import Website
 from src.scrapers.hipertextualscraper import HipertextualScraper
